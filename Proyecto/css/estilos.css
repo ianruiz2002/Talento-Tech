@@ -1,0 +1,181 @@
+/*
+    Alto comentario
+*/
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+*/*Universal*/{
+    font-family: "Afacad Flux", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    height: 100vh;
+    background-image: url(../assets/img/pexels-zakhar-15508161.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+h1 {
+    text-align: center;
+}
+
+p{
+    font-size: 1rem;
+}
+header{
+    border: 5px solid black;
+    height: max-content;
+    width: 100%;
+    background-color:#3A2B27;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    nav{
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 3rem;
+        }
+    }
+}
+main{
+    h1{
+        margin: 1rem;
+        margin-left: 20rem;
+        margin-right: 20rem;
+        background-color: #27363a;
+    }
+    section{
+        background-color: #3A2B27;
+    }
+}
+footer{
+    padding: 5px;
+    margin-top: auto;
+    background-color: #27363a;
+    display: grid;
+}
+.botonLindo{
+    color: white;
+    font-size: 1.5rem;
+    height: 2rem;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.flexItem{
+    border: 1px solid black;
+    font-size: 2rem;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+}
+.fuenteNegrita{
+    font-weight: 700;
+}
+.colorPrincipal{
+    background-color: #3a2b27;
+}
+.colorSecundario{
+    background-color: #27363a;
+}
+
+.imagenReducida{
+    width: 5rem;
+    height: auto;
+}
+.redesSociales{
+    width: 2rem;
+    height: auto;
+}
+.productos{
+    width: 90%;
+    margin:0 auto;
+    height: 50vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:0.5px solid gray;
+}
+.productos img{
+    width: 0px;
+    height:100%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s ease;
+}
+.productos img:hover{
+    width: 30%;
+    opacity: 1;
+    filter:contrast(120%);
+    
+}
+.formulario{
+    width: fit-content;
+    height:auto;
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                         "h2 imagen"
+                          "formulario imagen"
+                         ;
+    background-color: #3A2B27;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    h1{
+        grid-area: titulo;
+    }
+    h2{
+        grid-area: h2;
+    }
+    form{
+        grid-area: formulario;
+        padding: 5px;
+    }
+    img{
+        grid-area: imagen;
+    }
+    div{
+        border: 1px solid black;
+        font-size: 1rem;
+        text-align: center;
+        padding: 2px;
+    }
+}
+.reseñas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+.reseña-item {
+    padding: 1.4rem;
+  }
+  
+.reseñas-item h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+.calificacion {
+    color: #ffa500;
+  }
+  
+.comentario {
+    color: white;
+    margin: 5px 0;
+    font-size: 1em;
+  }
